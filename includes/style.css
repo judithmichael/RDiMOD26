@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
    Wrap Sections
    ========================================================================== */
 #headerwrap {
-	background: url(../img/back.png) no-repeat center top;
+	background: url(back.png) no-repeat center top;
 	margin-top: 0px;
 	padding-top: 1em;
 	text-align: center;
