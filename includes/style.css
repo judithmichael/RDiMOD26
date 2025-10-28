@@ -29,14 +29,14 @@ html, button, input, select, textarea {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-	background: #f2c2c9;
-	color: #a4003a;
+	background: #d9eefc; /* light blue */
+	color: #002b6d;     /* dark blue */
 	text-shadow: none;
 }
 
 ::selection {
-	background: #16a085;
-	color: #a4003a;
+	background: #d9eefc; /* light blue */
+	color: #002b6d;     /* dark blue */
 	text-shadow: none;
 }
 
