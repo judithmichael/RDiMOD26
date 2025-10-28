@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4th Working Workshop on Research Data Management in Modelling (RDiMOD)</title>
+
+<!-- Bootstrap core CSS -->
+<link href="includes/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="includes/style.css" rel="stylesheet">
+<link href="includes/font-awesome.min.css" rel="stylesheet">
+
+<!-- Leaflet map -->
+<link rel="stylesheet" href="includes/leaflet.css">
+<script src="includes/leaflet.js"></script>
+
+<!-- gallery modal -->
+<link href="includes/modal.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- inline style for language switch -->
+<style>
+  /* ensure the global language switch is always readable */
+  .lang-switch-global {
+    position: fixed;
+    top: 22px; /* moved 10px down */
+    left: 48px; /* to the right of the menu toggle */
+    z-index: 9999;
+    background: rgba(0,0,0,0.45); /* translucent grey */
+    padding: 6px 10px;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: background .12s ease-in-out;
+    transition: background .12s ease-in-out;
+  }
+  .lang-switch-global:hover { background: rgba(0,0,0,0.35); }
+  .lang-switch-global a { color: #fff; text-decoration: none; padding: 0 6px; opacity: 0.95; }
+  .lang-switch-global a + a { margin-left: 6px; }
+  .lang-switch-global a.active {
+    font-weight: 700;
+    background: #fff;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.05);
+  }
+</style>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu" style="" class="">
+
+	<!-- global language switch (always visible, top-left) -->
+	<div class="lang-switch-global" aria-hidden="false">
+		<a href="index.html">DE</a> |
+		<a href="index_en.html" class="active">EN</a>
+	</div>
+ 
+ 	<nav class="menu" id="theMenu">
+ 		<div class="menu-wrap">
+ 		<h1 class="logo">
+ 			<a href="https://judithmichael.github.io/RDiMOD26/index.html#home">Home</a>
+ 		</h1>
+ 			<i class="fa fa-times menu-close"></i>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#goalAndConcept">Goals and Concept</a>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#importantDates">Important Dates</a>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#call">Call for Papers</a>
+ 				<!-- <a href="https://judithmichael.github.io/RDiMOD26/index.html#program">Program</a> -->
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#registration">Registration</a>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#project">Project</a> 
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#persons">People</a> 
+ 				<!-- <a href="https://judithmichael.github.io/RDiMOD26/index.html#fotos">Photos</a> -->
+ 		</div>
+
+ 		<div id="menuToggle" class="">
+ 			<i class="fa fa-bars"></i>
+ 		</div>
+ 	</nav>
+
+ 	<a name="home"></a>
+ 	<div id="headerwrap">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-xs-12 col-md-10 col-md-offset-1">
+ 					<h1>4th Working Workshop on Research Data Management in Modelling (RDiMOD)</h1>
+ 					<h2>As part of Modellierung 2026, March, Bayreuth</h2>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<a name="goalAndConcept"></a>
+ 	<div class="sectionwrap">
+ 		<div class="container-fluid">
+ 			<div class="row">
+ 				<div class="col-lg-3 col-md-3 col-sm-3 name">
+ 					<img class="sectionimage img-responsive center-block" src="includes/objective.svg" style="margin: 0 auto">
+ 				</div>
+ 				<div class="col-lg-6 col-md-8 col-sm-8 name-desc">
+ 					<h1 style="text-transform:uppercase">Goals and Concept</h1>
+ 					<p style="text-align: justify"> Research benefits greatly when data and artifacts are openly accessible: results become more reproducible, studies can be compared, data can be reused, and new research questions can build on existing work.
+Models play a key role here — not only in computer science but in many other scientific disciplines. They serve as central representations of knowledge, processes and structures, help to explain, understand and analyze, and often form the basis for experiments and simulations. At the same time, models themselves can be an important tool for research data management by structuring data, enriching it semantically and improving reusability and quality.
+As the importance of data and models grows, so does the pressure to support scientific findings with accessible and well-documented data and artifacts. Publications and funding proposals increasingly require that empirical data, experiment context and accompanying artifacts such as models, descriptions, software or tools be made openly available. To support this, infrastructures are emerging that provide research data according to the FAIR principles (Findable, Accessible, Interoperable, Reusable) — also within the framework of the National Research Data Infrastructure (NFDI).
+The NFDIxCS consortium is working on systematic approaches to identify requirements for infrastructures for research data management not only for computer science in general but specifically for the field of modelling. Building on previous workshops in this series, the planned workshop invites the community to contribute their experiences, reflect together and advance the discussion on research data management in modelling.
+The workshop centers on three overarching questions:
+</p><ul>
+<li>What do we understand by research data in modelling and who benefits from its use?</li>
+<li>How can such data be sustainably collected, shared and reused to promote quality, reproducibility and collaboration?</li>
+<li>How can models themselves serve as a tool to structure research data, semantically enrich it and thereby improve quality and reusability?</li>
+</ul>
+</p><p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<a name="importantDates"></a>
+ 	<div id="servicewrap" style="background-color: #F3F3F3">
+ 		<div class="container">
+
+ 			<div class="row">
+ 				<div class="col-lg-8-offset-2 centered">
+ 					<h1 style="text-transform:uppercase">
+ 						<img src="includes/calendar146.svg" style="margin: auto; height: 34px;"> Important Dates
+ 					</h1>
+ 				</div>
+ 			</div>
+
+ 			<table class="table-styled table">
+ 				<tbody>
+ 					<tr>
+ 						<th scope="row"><p>Submission deadline for workshop papers</p></th>
+ 						<td><p>18 Dec 2025</p></td>
+ 					</tr>
+ 					<tr>
+ 						<th scope="row"><p>Notification of acceptance</p></th>
+ 						<td><p>05 Feb 2026</p></td>
+ 					</tr>
+ 					<tr>
+ 						<th scope="row"><p>Submission of final workshop papers</p></th>
+ 						<td><p>26 Feb 2026</p></td>
+ 					</tr>
+ 					<tr>
+ 						<th scope="row"><p>Workshop</p></th>
+ 						<td><p>09 Mar 2026</p></td>
+ 					</tr>
+ 				</tbody>
+ 			</table>
+ 		</div>
+ 	</div>
+
+ 	<a name="call"></a>
+ 	<div class="sectionwrap">
+ 		<div class="container-fluid">
+ 			<div class="row">
+ 				<div class="col-lg-3 col-md-3 col-sm-3 name">
+ 					<img class="sectionimage img-responsive center-block" src="includes/megaphone.svg" style="margin: 0 auto">
+ 				</div>
+ 				<div class="col-lg-6 col-md-8 col-sm-8 name-desc">
+ 					<h1 style="text-transform:uppercase">
+ 						Call for Papers
+ 					</h1>
+ 					<p style="text-align: justify">We invite submissions for the workshop; both new contributions and already published works may be presented to share insights and foster discussion. In addition to scientific perspectives, concrete use cases and practice reports should be discussed, e.g., challenges in sharing or reusing modelling data, tools or artifacts.
+Possible topics for submissions (not exhaustive):
+</p><ul>
+<li>Types and roles of empirical data and artifacts in modelling research</li>
+<li>Standards and structures for metadata and documentation</li>
+<li>Examples of successful or problematic reuse (use cases)</li>
+<li>Legal, ethical and data protection aspects</li>
+<li>Existing repositories and infrastructures and their use in modelling</li>
+<li>Community building, sustainability and integration into NFDI activities</li>
+</ul>
+<p style="text-align: justify">Sessions and the final program for the workshop will be determined after reviewing submissions. Planned elements include thematic session grouping, possibly a keynote talk, interactive small-group work on selected issues and a moderated panel discussion on a focused topic.</p>
+<p style="text-align: justify">Contributions will be published as a joint proceedings volume in the Digital Library of the German Informatics Society (GI e.V.).</p>
+
+<h1 style="text-transform:uppercase">Submission formats</h1>
+<p style="text-align: justify">Submissions may be in English or German and should follow the LNI formatting guidelines. The following rules apply to the different submission types:</p>
+<ul>
+<li>New contributions: 4–8 pages</li>
+<li>Already published contributions (resubmission): short paper of 2–4 pages</li>
+</ul>
+
+<p><strong>Please use the EasyChair platform to submit your paper: <a href="https://easychair.org/conferences?conf=rdimod26">https://easychair.org/conferences?conf=rdimod26</a></strong></p>
+
+ 				</div>
+
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<a name="registration"></a>
+ 	<div class="sectionwrap">
+ 		<div class="container-fluid">
+ 			<div class="row">
+ 				<div class="col-lg-3 col-md-3 col-sm-3 name">
+ 					<img class="sectionimage img-responsive center-block" src="includes/login.svg" style="margin: 0 auto">
+ 				</div>
+ 				<div class="col-lg-6 col-md-8 col-sm-8 name-desc">
+ 					<h1 style="text-transform:uppercase">Registration and Participation</h1>
+ 					<p style="text-align:justify;">The workshop will take place as part of the conference "Modellierung 2026" of the GI cross-sectional committee Modellierung from 09–12 March 2026 in Bayreuth.</p>
+ 					<p style="text-align:justify">Information about conference registration can be found on the conference website: <a href="https://www.modellierung-2026.uni-bayreuth.de/de/index.html">www.modellierung-2026.uni-bayreuth.de</a>.</p>
+ 				</div>
+
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<a name="project"></a>
+         <div class="sectionwrap">
+                 <div class="container-fluid">
+                         <div class="row">
+                                 <div class="col-lg-3 col-md-3 col-sm-3 name">
+	<img src="includes/nfdixcs.png" style="margin: auto; height: 38px;">
+                                 </div>
+                                 <div class="col-lg-6 col-md-8 col-sm-8 name-desc">
+                                         <h1 style="text-transform:uppercase">PROJECT NFDIxCS</h1>
+                                         <p style="text-align: justify;">
+		The main goal of the NFDIxCS consortium is to identify, define and deploy services that allow storing complex domain-specific data objects from the various sub-domains of Computer Science and to realize the FAIR principles across the board. This includes producing reusable data objects specific to the different types of CS data, which not only contain the data and related metadata but also the corresponding software, context and execution information in a standardized way. These data objects can be of any size, structure and quality. More information is available on the <a href="https://www.nfdixcs.org">project website</a>.
+	</p>
+                                 </div>
+
+                         </div>
+                 </div>
+         </div>
+
+ 	<a name="persons"></a>
+ 	<div id="personswrap" style="background-color: #F3F3F3">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-lg-8-offset-2 centered">
+ 					<h1 class="centered" style="text-transform:uppercase">
+ 						<img src="includes/group58.svg" style="margin: auto; height: 34px;"> Organizing Team
+ 					</h1>
+ 				</div>
+ 			</div>
+                         <table id="program_komitee" class="table-styled table">
+                                 <tbody>
+                                         <tr>
+                                                 <th scope="row"><p><a href="https://bis.aifb.kit.edu/21_69.php">Meike Ullrich</a></p></th>
+                                                 <td><p>Karlsruhe Institute of Technology</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p><a href="https://s3.paluno.uni-due.de/team/michael-goedicke">Michael Goedicke</a></p></th>
+                                                 <td><p>University of Duisburg-Essen</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p><a href="https://www.uni-regensburg.de/informatik-data-science/fakultaet/einrichtungen/programmierung-und-software-engineering/team/judith-michael">Judith Michael</a></p></th>
+                                                 <td><p>University of Regensburg</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p><a href="https://bis.aifb.kit.edu/21_65.php">Clemens Schreiber</a></p></th>
+                                                 <td><p>Karlsruhe Institute of Technology</p></td>
+                                         </tr>
+                                 </tbody>
+                         </table>
+ 		</div>
+ 	</div>
+
+         <a name="pc"></a>
+         <div class="sectionwrap">
+                 <div class="container">
+                         <div class="row">
+                                 <div class="col-lg-8-offset-2 centered">
+                                         <h1 style="text-transform:uppercase">
+                                                 <img src="includes/man216.svg" style="margin: auto; height: 34px;"> Program Committee
+                                         </h1>
+                                 </div>
+                         </div>
+
+                         <table id="program_komitee" class="table-styled table">
+                                 <tbody>
+                                         <tr>
+                                                 <th scope="row"><p>Dominik Bork</p></th>
+                                                 <td><p>TU Wien</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p>Gregor Engels</p></th>
+                                                 <td><p>University of Paderborn</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p>Agnes Koschmider</p></th>
+                                                 <td><p>University of Kiel</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p>Nadja Kruse</p></th>
+                                                 <td><p>Karlsruhe Institute of Technology</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p>Ulrike Lucke</p></th>
+                                                 <td><p>University of Potsdam</p></td>
+                                         </tr>
+                                         <tr>
+                                                 <th scope="row"><p>Michael Striewe</p></th>
+                                                 <td><p>University of Applied Sciences Trier</p></td>
+                                         </tr>
+                                 </tbody>
+                         </table>
+                 </div>
+         </div>
+
+<!-- The Modal -->
+<div id="modal" class="modal" style="display: none;">
+  <span id="modal-close" class="modal-close">×</span>
+  <img id="modal-content" class="modal-content" src="includes/mohol_01.jpg">
+  <div id="modal-caption" class="modal-caption"></div>
+</div>
+
+	<div id="contactwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Contact information:</p>
+					<p>
+						<small>Responsible according to § 10 para. 3 MDStV for the content of this page is</small>
+					</p>
+					<p>
+						<small>Meike Ullrich<br>Institute AIFB, Karlsruhe Institute of Technology
+							<br>Kaiserstr. 89<br>76133 Karlsruhe
+						</small>
+					</p>
+					<p>
+						<small><a href="mailto:meike.ullrich@kit.edu">meike.ullrich@kit.edu</a></small>
+					</p><p>
+						<small> Some icons from <a href="http://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>: ( "<a href="http://www.flaticon.com/free-icon/small-megaphone_3911">Small
+								Megaphone</a>" and "<a href="http://www.flaticon.com/free-icon/small-camera_3901">Small
+								camera</a>" by Daniel Bruce, "<a href="http://www.flaticon.com/free-icon/target_60481">Target</a>",
+							"<a href="http://www.flaticon.com/free-icon/clock-circular-outline_59252">Clock
+								Circular Outline</a>", and "<a href="http://www.flaticon.com/free-icon/plain-flag_62509">Plain
+								flag</a>", and and "<a href="http://www.flaticon.com/free-icon/clock-circular-outline_59252">Calendar</a>",
+							and "<a href="http://www.flaticon.com/free-icon/group-of-three-men-standing-side-by-side-hugging-each-other_47352">Group
+								of three men standing side by side hugging each other</a>", and "<a href="http://www.flaticon.com/free-icon/man-reading_43455">Man
+								reading</a>", and "<a href="http://www.flaticon.com/free-icon/login-symbol_1230">Login
+								symbol</a>" by Freepik ). The header background image is taken from the WordPress theme <a href="https://de.wordpress.org/themes/twentythirteen/">twentythirteen</a>" 
+							published under <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.de.html">GPL v2</a>.
+						</small>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script src="includes/modal.js"></script>
+	<small> <!-- Bootstrap core JavaScript
+    ================================================== --> <!-- Placed at the end of the document so the pages load faster -->
+		<script src="includes/jquery.min.js"></script>
+		<script src="includes/classie.js"></script> <script src="includes/bootstrap.min.js"></script> <script src="includes/smoothscroll.js"></script> <script src="includes/jquery.stellar.min.js"></script> <script src="includes/main.js"></script> <script>
+				$(function() {
+					$.stellar({
+						horizontalScrolling : false,
+						verticalOffset : 40
+					});
+				});
+			</script> <script>
+				function decryptCharcode(n, start, end, offset) {
+					n = n + offset;
+					if (offset > 0 && n > end) {
+						n = start + (n - end - 1);
+					} else if (offset < 0 && n < start) {
+						n = end - (start - n - 1);
+					}
+					return String.fromCharCode(n);
+				}
+				function decryptString(enc, offset) {
+					var dec = "";
+					var len = enc.length;
+					for (var i = 0; i < len; i++) {
+						var n = enc.charCodeAt(i);
+						if (n >= 0x2B && n <= 0x3A) {
+							dec += decryptCharcode(n, 0x2B, 0x3A, offset);
+						} else if (n >= 0x40 && n <= 0x5A) {
+							dec += decryptCharcode(n, 0x40, 0x5A, offset);
+						} else if (n >= 0x61 && n <= 0x7A) {
+							dec += decryptCharcode(n, 0x61, 0x7A, offset);
+						} else {
+							dec += enc.charAt(i);
+						}
+					}
+					return dec;
+				}
+				function linkTo_UnCryptMailto(s) {
+					location.href = decryptString(s, -8);
+				}
+			</script>
+	</small>
+
+
+</body></html>

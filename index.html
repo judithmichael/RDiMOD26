@@ -25,42 +25,77 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<!-- inline style for language switch -->
+<style>
+  /* ensure the global language switch is always readable */
+  .lang-switch-global {
+    position: fixed;
+    top: 22px; /* moved 10px down */
+    left: 48px; /* to the right of the menu toggle */
+    z-index: 9999;
+    background: rgba(0,0,0,0.45); /* translucent grey */
+    padding: 6px 10px;
+    border-radius: 0;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: background .12s ease-in-out;
+    transition: background .12s ease-in-out;
+  }
+  .lang-switch-global:hover { background: rgba(0,0,0,0.35); }
+  .lang-switch-global a { color: #fff; text-decoration: none; padding: 0 6px; opacity: 0.95; }
+  .lang-switch-global a + a { margin-left: 6px; }
+  .lang-switch-global a.active {
+    font-weight: 700;
+    background: #fff;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,0.05);
+  }
+</style>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#theMenu" style="" class="">
 
-	<nav class="menu" id="theMenu">
-		<div class="menu-wrap">
-			<h1 class="logo">
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#home">Start</a>
-			</h1>
-			<i class="fa fa-times menu-close"></i>
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#goalAndConcept">Ziele und Konzept</a>
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#importantDates">Termine und Fristen</a>
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#call">Aufruf</a>
-				<!-- <a href="https://judithmichael.github.io/RDiMOD26/index.html#program">Programm</a> -->
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#registration">Registrierung</a>
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#project">Projekt</a> 
-				<a href="https://judithmichael.github.io/RDiMOD26/index.html#persons">Personen</a> 
-				<!-- <a href="https://judithmichael.github.io/RDiMOD26/index.html#fotos">Fotos</a> -->
-		</div>
-
-		<div id="menuToggle" class="">
-			<i class="fa fa-bars"></i>
-		</div>
-	</nav>
-
-	<a name="home"></a>
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-md-10 col-md-offset-1">
-					<h1>4th Working Workshop on Research Data Management in Modelling (RDiMOD)</h1>
-					<h2>Im Rahmen der Modellierung 2026, März, Bayreuth</h2>
-				</div>
-			</div>
-		</div>
+	<!-- global language switch (always visible, top-left) -->
+	<div class="lang-switch-global" aria-hidden="false">
+		<a href="index.html" class="active">DE</a> |
+		<a href="index_en.html">EN</a>
 	</div>
+ 
+ 	<nav class="menu" id="theMenu">
+ 		<div class="menu-wrap">
+ 			<h1 class="logo">
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#home">Start</a>
+ 			</h1>
+ 			<i class="fa fa-times menu-close"></i>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#goalAndConcept">Ziele und Konzept</a>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#importantDates">Termine und Fristen</a>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#call">Aufruf</a>
+ 				<!-- <a href="https://judithmichael.github.io/RDiMOD26/index.html#program">Programm</a> -->
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#registration">Registrierung</a>
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#project">Projekt</a> 
+ 				<a href="https://judithmichael.github.io/RDiMOD26/index.html#persons">Personen</a> 
+ 				<!-- <a href="https://judithmichael.github.io/RDiMOD26/index.html#fotos">Fotos</a> -->
+ 		</div>
+
+ 		<div id="menuToggle" class="">
+ 			<i class="fa fa-bars"></i>
+ 		</div>
+ 	</nav>
+
+ 	<a name="home"></a>
+ 	<div id="headerwrap">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-xs-12 col-md-10 col-md-offset-1">
+ 					<h1>4th Working Workshop on Research Data Management in Modelling (RDiMOD)</h1>
+ 					<h2>Im Rahmen der Modellierung 2026, März, Bayreuth</h2>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
 
 <!--
         <a name="program"></a>
@@ -508,7 +543,7 @@ dazugehörige Unterlagen und Materialien werden zusätzlich auf der <a href="htt
 		<img src="Workshop%20zur%20Modellierung%20in%20der%20Hochschullehre%20(MoHoL)%202022-Dateien/mohol_04.jpg" class="modal-target img-responsive center-block" style="height:75% width:75%">
 		</div>
 		<div class="col-lg-4 centered">
-		<img src="Workshop%20zur%20Modellierung%20in%20der%20Hochschullehre%20(MoHoL)%202022-Dateien/mohol_05.jpg" class="modal-target img-responsive center-block" style="height:75% width:75%">
+		<img src="Workshop%20zur%20Modellierung%20in%20der%20Hochschullehre%20(MoHoL)%202022-Dateien/mohol_05.jpg" class="modal-target img-responsive center-block" style="height:75% width=75%">
 		</div>
 		</div>
 		<div class="row">
